@@ -4,5 +4,3 @@ let pessoa = {
     empresa:"Alura",
     cargo:"Desingner",
 };
-
-console.log(pessoa.nome);
