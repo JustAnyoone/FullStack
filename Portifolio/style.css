@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Roboto", sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.menu{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 30px;
+}
+.menu-list a{
+    text-decoration: none;
+    padding: 25px;
+    color: #DDD;
+    
+}
+.menu-list a:hover{
+    color: white ;
+}
+
+.main{
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    background-image: url(images/programador.png);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.main h1{
+    color: #FFFFFF;
+    font-size: 45px;
+}
+.main p{
+    color: #574769d5;
+    font-style: italic;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.call-to-action{
+    cursor: pointer;
+    background-color: #574769d5;
+    color: #DDD;
+    border: 0;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9s ;
+}
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+.main a{
+    text-decoration: none;
+    color: #181818;
+}
+
+/* Incio About */
+
+.about{
+    background-color: #000000;
+    color: #DDD;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about div{
+    max-width: 50%;
+    padding-right: 10%;
+}
+.about img{
+    max-width: 450px;
+    border-radius: 20px;
+}
+.about div h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Fim do About */
+
+/* Project */
+
+.projects{
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.projects h2{
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.projects p{
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.projects-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img{
+    width: 22%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 1.9s;
+}
+
+.projects img:hover{
+    opacity: 1;
+}
+
+.action{
+    background: #121212;
+    border: 0;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 4px;
+    color: #DDD;
+    cursor: pointer;
+}
+/* Fim projects */
+
+/* Start Footer */
+footer{
+    width: 100%;
+    background-color: #121212;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DDD;
+}
+footer a{
+    text-decoration: none;
+}
+footer h3 {
+    margin-right: 10px;
+}
+
+
+/*End Footer*/
+
+/* Start media queries (Responsividade) */
+
+@media (max-width: 1050px) {
+    .about{
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .about div{
+        max-width: 80%;
+    }
+    
+    .about img{
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* Projects */
+
+    .projects img {
+        width: 27.5%;
+    }
+}
+
+/* End media queries*/

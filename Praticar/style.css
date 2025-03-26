@@ -1,0 +1,69 @@
+body{
+    background-color: #121212;
+}
+
+.container{
+    background-color: black;
+    height: 500px;
+    margin: 50px;
+
+    /* Ativando o Flexbox */
+
+    
+    display: flex;
+    flex-direction: row; 
+    /* justify-content: space-around; */
+
+    align-items: center;  
+    justify-content: center;
+
+    /*
+     Align-items = Eixo X
+     Justify-content = Eixo Y
+     Dependendo se esta em Row ou Culunm eles invertem o seu valor
+    */
+
+    /* 
+        space-around: ítens distribuídos igualmente com o mesmo espaçamento entre cada linha.
+        space-evenly: ítens distribuídos igualmente com o mesmo espaçamento entre eles.
+        center: distribui os items no centro
+        flex-end joga eles pro final da linha 
+    */
+}
+
+.area{
+    height: 100px;
+    width: 100px; 
+    font-size: 25px;
+
+    /* flex-basis: 400px; */
+    /* flex: 1 ; */
+}
+
+.item_01{
+
+    background-color: darkgreen;
+    align-self: center;
+
+    /* order: 2; */
+    /* flex-shrink: 1; */
+    /* flex: 1; */
+}
+.item_02{
+    background-color: red;
+
+    /* order: 1; */
+    /* flex-shrink: 1; */
+    /* flex: 1; */
+}
+.item_03{
+    background-color: blue;
+
+    /* order: 3; *
+    /* flex-shrink: 2; */
+    /* Esse elemento vai reduzir duas vezes mais doq os elementos com  1  */
+    /* flex: 1; */
+}
+.item_04{
+    background-color: yellow;
+}
